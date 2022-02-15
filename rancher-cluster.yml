@@ -1,0 +1,12 @@
+nodes:
+  - address: 192.168.4.26
+    internal_address: 192.168.4.26
+    user: vonechain
+    role: [controlplane,worker,etcd]
+
+services:
+    etcd:
+      snapshot: true
+      creation: 6h
+      retention: 24h
+
